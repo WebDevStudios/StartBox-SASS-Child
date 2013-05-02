@@ -11,6 +11,11 @@
 	TEMPLATE: startbox
 */
 
+// Import compass utilities
+// Uncomment these to use compass mixins. http://compass-style.org
+// @import "compass/css3";
+// @import "compass/utilities";
+
 // Get our color (etc) variables
 @import 'variables';
 
