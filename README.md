@@ -1,6 +1,6 @@
 StartBox SASS Child theme
 ============
-The default StartBox child theme with Sass!
+The default StartBox child theme with SASS!
 -----------------------------------
 
 This is a starter child theme for [StartBox](http://wordpress.org/extend/themes/responsive) WordPress theme framework that uses SASS/SCSS for editing the style.
