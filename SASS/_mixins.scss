@@ -1,0 +1,64 @@
+@function parent_img_dir($filename){
+	@return $parent_img_dir + $filename;
+}
+
+@function img_dir($filename){
+	@return $img_dir + $filename;
+}
+
+@mixin clear() {
+	content: '';
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+@mixin button_main() {
+	display:inline-block;
+	background-color: $three;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, $five), color-stop(1, $two) );
+	background: -moz-linear-gradient( center top, $five 20%, $two 100% );
+	border-color:$four;
+	color:$white!important;
+	line-height:1em;
+	text-align:center;
+	text-decoration:none!important;
+	padding:6px 15px;
+	margin: 1.4em 0;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border-width:1px;
+	border-style:solid;
+	cursor: pointer;
+	text-shadow: $text_shadow;
+	-webkit-box-shadow: inset 0 1px 0 $white30,
+						inset 0 0 2px $white30,
+						0 1px 3px $black50;
+	-moz-box-shadow: inset 0 1px 0 $white30,
+					inset 0 0 2px $white30,
+					0 1px 2px $black30;
+	box-shadow: inset 0 1px 0 $white30,
+				inset 0 0 2px $white30,
+				0 1px 2px $black30;
+	&:hover {
+		-webkit-box-shadow: inset 0 1px 0 $white50,
+							inset 0 -5px 30px $white25,
+							0 1px 2px $black30;
+		-moz-box-shadow: inset 0 1px 0 $white50,
+							inset 0 -5px 30px $white25,
+							0 1px 2px $black30;
+		box-shadow: inset 0 1px 0 $white50,
+							inset 0 -5px 30px $white25,
+							0 1px 2px $black30;
+	}
+	&:active {
+		border-color: $button_active;
+		-webkit-box-shadow: inset 0 3px 7px $black50,
+							0 1px 0 $transp;
+		-moz-box-shadow: inset 0 3px 7px $black50,
+							0 1px 0 $transp;
+		box-shadow: inset 0 3px 7px $black50,
+							0 1px 0 $transp;
+	}
+}

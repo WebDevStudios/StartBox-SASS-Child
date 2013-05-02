@@ -1,0 +1,69 @@
+/****************************************************************************************************************
+
+	Default styles for Images
+
+****************************************************************************************************************
+
+Adapt the following for use in your Child Themes when using
+different font-sizes and line-heights
+
+.entry-content img,
+.wp-caption {
+    margin-bottom:--px;
+}
+.wp-smiley {
+    max-height:--px;
+}
+
+All other styles can be overridden--or ignored!--in Child Theme stylesheets
+
+****************************************************************************************************************/
+
+.entry-content img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 $default_margin 0;
+}
+.alignleft,
+img.alignleft {
+	float: left;
+	margin-right:$default_margin;
+}
+.alignright,
+img.alignright {
+	display: block;
+	float: right;
+	margin-left:$default_margin;
+}
+.aligncenter,
+img.aligncenter {
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+	clear: both;
+}
+.wp-caption {
+	text-align: center;
+	margin-bottom:$default_margin;
+	padding:2%;
+	max-width: 100%;
+	img {
+		width: 100%;
+		margin:0;
+		padding:0;
+		height: auto;
+		border: 0 none;
+	}
+	p.wp-caption-text {
+		margin: 0;
+		padding:5px;
+	}
+}
+.gallery img {
+    margin:0;
+}
+.gallery-caption {}
+.wp-smiley { /* Prevent the smileys from breaking line-height */
+	max-height:1em;
+	margin:0 !important;
+}

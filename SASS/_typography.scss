@@ -1,0 +1,191 @@
+/****************************************************************************************************************
+
+	Set default typography based on Blueprint CSS
+	http://code.google.com/p/blueprintcss/
+
+****************************************************************************************************************
+
+Table of Contents
+
+****************************************************************************************************************
+
+0.  Notes
+1.	General Styling
+2. 	Headings
+3.	Text Elements
+4.	Pull Quotes
+
+****************************************************************************************************************/
+
+body {
+	background: $white;
+	color:$three;
+	font:$body_font_sz $font1;
+	line-height:$body_lh;
+	margin:0;
+	padding:0;
+}
+a, a:visited {
+	text-decoration:none;
+	color:$nine;
+}
+a:hover, a:active {
+	color:$three;
+}
+h1,h2,h3,h4,h5,h6 {
+	color:$one;
+	font-weight:bold;
+	font-family:$font1;
+	line-height:$header_lh;
+	margin-bottom:.5em;
+}
+h1 { font-size:$h1; }
+h2 { font-size:$h2; }
+h3 { font-size:$h3; }
+h4 { font-size:$h4; }
+h5 { font-size:$h5; }
+h6 { font-size:$h6; }
+hr {
+	margin:$header_lh auto;
+	display:block;
+	clear:both;
+	border-collapse:collapse;
+	border:0;
+	border-bottom:1px solid $aaa;
+}
+img, p img {
+	float:none;
+	margin:auto;
+	border:0;
+}
+sup,sub { font-size:.6em;}
+pre {
+	background:$light;
+	padding:1em;
+	border:1px solid $pre;
+	font:$font_mono;
+	line-height:$default_margin;
+	margin-bottom:$default_margin;
+	font:$font_mono;
+}
+code {
+	font: $font_mono;
+}
+del {}
+ins {
+	background:$ins;
+	padding:0 4px;
+}
+p {
+    margin-bottom:$default_margin;
+}
+ul, ol, dl {
+	margin: 0 0 $default_margin $list_offset;
+}
+ul {
+	list-style:disc;
+}
+ol {
+	list-style-type: decimal;
+}
+ol ol {
+	list-style:upper-alpha;
+}
+ol ol ol {
+	list-style:lower-roman;
+}
+ol ol ol ol {
+	list-style:lower-alpha;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom:0;
+}
+dl	{
+    margin:0 $default_margin;
+}
+dt {
+    font-weight:bold;
+}
+dd {
+	margin-bottom:$default_margin;
+}
+strong {
+	font-weight: bold;
+}
+cite, em, i, var {
+	font-style: italic;
+}
+blockquote {
+	font-style: italic;
+	margin: 0 3em;
+	p {}
+	em, i, cite, var {
+		font-style:normal;
+	}
+	.left {
+		float: left;
+		margin-left:0;
+		margin-right:20px;
+		text-align: right;
+		width: 33%;
+	}
+	.right {
+		float: right;
+		margin-left:20px;
+		margin-right:0;
+		text-align: left;
+		width: 33%;
+	}
+}
+q:lang(en) {
+	quotes: "“" "”" "‘" "’";
+}
+abbr, acronym {
+  border-bottom:1px dotted $three;
+  cursor: help;
+}
+ins {
+	text-decoration:none;
+}
+sup,
+sub {
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	position: relative;
+
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+
+.entry-content {
+	position:relative;
+	dl dl,
+	ul ul,
+	ol ol {
+		margin:0em 2em;
+	}
+	ol {
+		list-style-type:lower-roman;
+	}
+	strong { color:$one; }
+	table {
+		border:1px solid $ddd;
+		width:100%;
+		margin: 0 0 $default_margin 0;
+	}
+	table th {
+		padding:5px 20px;
+		text-align:left;
+		font-weight:bold;
+		color:$one;
+	}
+	table td {
+		border-top:1px solid $ddd;
+		padding:5px 20px;
+	}
+}

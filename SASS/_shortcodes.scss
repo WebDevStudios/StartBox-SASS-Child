@@ -1,0 +1,207 @@
+/****************************************************************************************************************
+
+	Default styles for Shortcodes
+
+****************************************************************************************************************
+
+Table of Contents
+
+****************************************************************************************************************
+
+1. 	Buttons
+2.	Lists
+3.	Content Boxes
+4.	Columns
+5.	Dividers
+
+****************************************************************************************************************
+
+1. Buttons
+
+****************************************************************************************************************/
+
+.button {
+	@include button_main();
+	&.small { padding:5px 10px; font-size:0.8em;}
+	&.large { padding:8px 16px; font-size:1.4em;}
+	&.xl { padding:10px 20px; font-size:1.8em;}
+
+	/* Default Button Colors */
+	&.red {
+		background-color: $red;
+		background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, $ltred), color-stop(1, $dkred) );
+		background: -moz-linear-gradient( center top, $ltred 20%, $red 100% );
+		border-color:$ltred;
+	}
+	&.orange {
+		background-color: $orange;
+		background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, $ltorange), color-stop(1, $orange) );
+		background: -moz-linear-gradient( center top, $ltorange 20%, $orange 100% );
+		border-color:$ltorange;
+	}
+	&.yellow {
+		background-color: $yellow;
+		background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, $ltyellow), color-stop(1, $dkyellow) );
+		background: -moz-linear-gradient( center top, $ltyellow 20%, $yellow 100% );
+		border-color:$yellow;
+	}
+	&.green {
+		background-color: $green;
+		background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, $ltgreen), color-stop(1, $green) );
+		background: -moz-linear-gradient( center top, $ltgreen 20%, $green 100% );
+		border-color:$green;
+	}
+	&.blue {
+		background-color: $blue;
+		background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, $ltblue), color-stop(1, $blue) );
+		background: -moz-linear-gradient( center top, $ltblue 20%, $blue 100% );
+		border-color:$ltblue;
+	}
+	&.purple {
+		background-color: $purple;
+		background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, $ltpurple), color-stop(1, $purple) );
+		background: -moz-linear-gradient( center top, $ltpurple 20%, $purple 100% );
+		border-color:$ltpurple;
+	}
+	&.dark {
+		background-color: $three;
+		background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, $five), color-stop(1, $two) );
+		background: -moz-linear-gradient( center top, $five 20%, $two 100% );
+		border-color:$four;
+	}
+	&.light {
+		background-color: $ltgray;
+		background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, $ltgray), color-stop(1, $bbb) );
+		background: -moz-linear-gradient( center top, $ltgray 20%, $bbb 100% );
+		color:$one!important;
+		border-color:$med-gray;
+	}
+}
+
+/****************************************************************************************************************
+
+2. Lists
+
+****************************************************************************************************************/
+.check_list, .arrow_list {
+	list-style:none!important;
+	li {
+		padding-left:20px;
+		background-repeat:no-repeat;
+		background-position:0 0;
+	}
+}
+.check_list li { background-image:url( parent_img_dir('icons/check.png') ); }
+.arrow_list li {}
+
+/****************************************************************************************************************
+
+3. Content Boxes
+
+****************************************************************************************************************/
+
+.box {
+	display:block;
+	background:$boxbg;
+	color:$two;
+	padding:10px 20px;
+	border-width:1px 0;
+	border-style:solid;
+	position:relative;
+	clear:both;
+	&.info {
+		background:$boxbg;
+		border-color:$med-gray;
+	}
+	&.dark {
+		background:$three;
+		border:$one;
+		color:$ltgray;
+	}
+	&.alert {
+		background:$alertbg url( parent_img_dir('icons/alert.png') ) no-repeat 10px 50%;
+		border-color:$alertbdr;
+		padding-left:45px;
+	}
+	&.download {
+		background:$downloadbg url( parent_img_dir('icons/download.png') ) no-repeat 10px 50%;
+		border-color:$downloadbdr;
+		padding-left:45px;
+	}
+	&.check {
+		background:$boxbg url( parent_img_dir('icons/check.png') ) no-repeat 10px 50%;
+		border-color:$med-gray;
+		padding-left:45px;
+	}
+	&.note {
+		background:$note url( parent_img_dir('icons/note.png') ) no-repeat 10px 50%;
+		border-color:$notebdr;
+		padding-left:45px;
+	}
+}
+
+/****************************************************************************************************************
+
+4. Columns
+
+****************************************************************************************************************/
+
+.column { width:100%; margin-right:4%; position:relative; float:left; }
+.column.last { clear:right; margin-right:0; }
+.one_half { width:48%; }
+.one_third { width:30.66%; }
+.two_thirds { width:65.33%; }
+.one_fourth { width:22%; }
+.three_fourths { width:74%; }
+.one_fifth { width:16.8%; }
+.two_fifths { width:37.6%; }
+.three_fifths { width:58.4%; }
+.four_fifths { width:79.2%; }
+.one_sixth { width:13.33%; }
+.five_sixths { width:82.67%; }
+
+/****************************************************************************************************************
+
+5. Dividers
+
+****************************************************************************************************************/
+
+.divider, .hr {
+	background:url( parent_img_dir('line.png') ) repeat-x 0 50%;
+	min-height:1px;
+	position:relative;
+	clear:both;
+	text-align:center;
+	.rtt {
+		display:inline;
+		background:$white;
+		padding:5px;
+	}
+}
+
+/****************************************************************************************************************
+
+6. Toggles
+
+****************************************************************************************************************/
+
+
+/****************************************************************************************************************
+
+7. Protected Content
+
+****************************************************************************************************************/
+
+.protected {
+	background:$ltgray;
+	color:$five;
+	font-style:italic;
+	border:1px solid $ddd;
+	border-width:1px 0;
+	margin:0 auto;
+	padding:15px;
+	text-align:center;
+	form {
+		margin-top:15px;
+	}
+}

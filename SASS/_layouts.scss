@@ -1,0 +1,207 @@
+/****************************************************************************************************************
+
+Table of Contents
+
+****************************************************************************************************************
+
+0.	One Column, no sidebars
+1. 	Two Columns, Sidebar on left
+2.	Two Columns, Sidebar on right
+3.	Three Columns, Sidebars on left
+4.	Three Columns, Sidebars on right
+5.	Three Columns, Sidebars on both sides
+
+*********************************************************************************************
+
+0.	One-column, no sidebars
+
+*********************************************************************************************/
+
+.layout-one-col div {
+	&.aside {
+		float: left;
+		overflow: hidden;
+	}
+	&#primary,
+	&#secondary,
+	&#tertiary {
+		display:none;
+	}
+	&#footer_wrap {
+		clear: left;
+	}
+}
+
+/* Full-width Page Template */
+.page-template-page-fullwidth-php div {
+	&#container,
+	&#content {
+		float: none!important;
+		margin: 0 auto!important;
+	}
+	&.aside {
+		float: left!important;
+		overflow: hidden!important;
+	}
+	&#primary,
+	&#secondary,
+	&#tertiary {
+		display:none!important;
+	}
+	&#footer_wrap {
+		clear: left!important;
+	}
+}
+
+/*********************************************************************************************
+
+1.	Two-column fluid layout with one sidebar left of content
+
+*********************************************************************************************/
+
+.layout-two-col-left div {
+	&#container {
+		float: right;
+		margin: 0 0 0 (-$two_col_content_offset);
+		width: 100%;
+	}
+	&#content {
+		margin: 0 0 0 $two_col_content_offset;
+	}
+	&#primary,
+	&#secondary,
+	&#tertiary {
+		float: left;
+		width: $two_col_sb_w;
+		overflow: hidden;
+	}
+	&#secondary {
+		display:none;
+	}
+	&#footer_wrap {
+		clear: both;
+	}
+}
+
+/*********************************************************************************************
+
+2.	Two-column fluid layout with one sidebar right of content
+
+*********************************************************************************************/
+
+.layout-two-col-right div {
+	&#container {
+		float: left;
+		margin: 0 (-$two_col_content_offset) 0 0;
+		width: 100%;
+	}
+	&#content {
+		margin: 0 $two_col_content_offset 0 0;
+	}
+	&#primary,
+	&#secondary,
+	&#tertiary {
+		float: right;
+		overflow: hidden;
+		width: $two_col_sb_w;
+	}
+	&#secondary {
+		display:none;
+	}
+	&#footer_wrap {
+		clear: both;
+	}
+}
+
+/*********************************************************************************************
+
+3.	Three-column fluid layout with two sidebars left of content
+
+*********************************************************************************************/
+
+.layout-three-col-left div {
+	&#container {
+		float: right;
+		margin: 0 0 0 (-$three_col_cont_offset) + px;
+		width: 100%;
+	}
+	&#content {
+		margin: 0 0 0 ($three_col_content_offset + px);
+	}
+	&#primary,
+	&#secondary {
+		float: left;
+		overflow: hidden;
+		width: $three_col_sb_w + px;
+		margin-right:$sidebar_margin + px;
+	}
+	&#footer_wrap {
+		clear: both;
+	}
+}
+
+/*********************************************************************************************
+
+4.	Three-column fluid layout with two sidebars right of content
+
+*********************************************************************************************/
+
+.layout-three-col-right div {
+	&#container {
+		float: left;
+		width: 100%;
+	}
+	&#content {
+		margin: 0 ($three_col_content_offset + px) 0 0;
+	}
+	&#primary,
+	&#secondary {
+		float: left;
+		overflow: hidden;
+		width: $three_col_sb_w + px;
+	}
+	&#primary {
+		margin: 0 0 0 (-$three_col_cont_offset) + px;
+	}
+	&#secondary {
+		margin: 0 0 0 (-$three_col_sec_offset) + px;
+	}
+	&#footer_wrap {
+		clear: left;
+	}
+}
+
+/*********************************************************************************************
+
+5.	Three-column fluid layout with two sidebars on both sides of content
+
+*********************************************************************************************/
+
+.layout-three-col-both div {
+	&#container {
+		float: left;
+		width: 100%;
+	}
+	&#content {
+		margin: 0 210px;
+	}
+	&#primary,
+	&#secondary {
+		float: left;
+		overflow: hidden;
+		width: $three_col_sb_w + px;
+	}
+	&#primary {
+		margin: 0 0 0 -100%;
+	}
+	&#secondary {
+		margin: 0 0 0 (-$three_col_sb_w + px);
+	}
+	&#footer_wrap {
+		clear: left;
+	}
+}
+* html .layout-three-col-both div#primary {
+	left: $sidebar_margin + px;
+	position: relative;
+}
