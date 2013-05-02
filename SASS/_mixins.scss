@@ -1,3 +1,7 @@
+/* `Default Mixins/Functions
+---------------------------------------------------------*/
+
+
 @function parent_img_dir($filename){
 	@return $parent_img_dir + $filename;
 }

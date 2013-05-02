@@ -1,4 +1,18 @@
-/* Typography */
+/* `Default Variables : Table of Contents
+---------------------------------------------------------
+
+1. Typography
+2. Colors
+3. Buttons
+4. Layout
+5. Misc
+
+*/
+
+
+/* `1. Typography
+---------------------------------------------------------*/
+
 
 $body_font_sz: 100%;
 $font1: Arial,sans-serif;
@@ -15,7 +29,9 @@ $h5: 1em;
 $h6: .8em;
 
 
-/* Color Variables */
+/* `2. Colors
+---------------------------------------------------------*/
+
 
 $white: #fff;
 $black: #000;
@@ -55,6 +71,11 @@ $caption: #f0f0f0;
 $comment_date: #8d8982;
 $text_shadow: 0 -1px 0 $black30;
 
+
+/* `3. Buttons
+---------------------------------------------------------*/
+
+
 $button_active: #20559a;
 $alertbg: #f88;
 $alertbdr: #900;
@@ -83,11 +104,10 @@ $ltblue: #0af;
 $purple: #704;
 $ltpurple: #b06;
 
-/* Misc */
 
-$parent_img_dir: '../startbox/images/';
-$img_dir: 'images/';
-$default_margin: .888888889em;
+/* `4. Layout
+---------------------------------------------------------*/
+
 
 $site_width: 960px;
 $content_width: 640px;
@@ -105,3 +125,12 @@ $three_col_both_margin: $three_col_sec_offset + ($sidebar_margin / 2);
 
 $comment_meta_w: 160px;
 $children_comment_meta_w: 200px;
+
+
+/* `5. Misc
+---------------------------------------------------------*/
+
+
+$parent_img_dir: '../startbox/images/';
+$img_dir: 'images/';
+$default_margin: .888888889em;

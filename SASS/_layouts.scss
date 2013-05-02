@@ -1,21 +1,19 @@
-/****************************************************************************************************************
+/* `Default styles for Layouts : Table of Contents
+---------------------------------------------------------
 
-Table of Contents
+0. One Column, no sidebars
+1. Two Columns, Sidebar on left
+2. Two Columns, Sidebar on right
+3. Three Columns, Sidebars on left
+4. Three Columns, Sidebars on right
+5. Three Columns, Sidebars on both sides
 
-****************************************************************************************************************
+*/
 
-0.	One Column, no sidebars
-1. 	Two Columns, Sidebar on left
-2.	Two Columns, Sidebar on right
-3.	Three Columns, Sidebars on left
-4.	Three Columns, Sidebars on right
-5.	Three Columns, Sidebars on both sides
 
-*********************************************************************************************
+/* `0. One Column, no sidebars
+---------------------------------------------------------*/
 
-0.	One-column, no sidebars
-
-*********************************************************************************************/
 
 .layout-one-col div {
 	&.aside {
@@ -53,11 +51,10 @@ Table of Contents
 	}
 }
 
-/*********************************************************************************************
 
-1.	Two-column fluid layout with one sidebar left of content
+/* `1. Two-column fluid layout with one sidebar left of content
+---------------------------------------------------------*/
 
-*********************************************************************************************/
 
 .layout-two-col-left div {
 	&#container {
@@ -83,11 +80,10 @@ Table of Contents
 	}
 }
 
-/*********************************************************************************************
 
-2.	Two-column fluid layout with one sidebar right of content
+/* `2. Two-column fluid layout with one sidebar right of content
+---------------------------------------------------------*/
 
-*********************************************************************************************/
 
 .layout-two-col-right div {
 	&#container {
@@ -113,11 +109,10 @@ Table of Contents
 	}
 }
 
-/*********************************************************************************************
 
-3.	Three-column fluid layout with two sidebars left of content
+/* `3. Three-column fluid layout with two sidebars left of content
+---------------------------------------------------------*/
 
-*********************************************************************************************/
 
 .layout-three-col-left div {
 	&#container {
@@ -140,11 +135,10 @@ Table of Contents
 	}
 }
 
-/*********************************************************************************************
 
-4.	Three-column fluid layout with two sidebars right of content
+/* `4. Three-column fluid layout with two sidebars right of content
+---------------------------------------------------------*/
 
-*********************************************************************************************/
 
 .layout-three-col-right div {
 	&#container {
@@ -171,11 +165,10 @@ Table of Contents
 	}
 }
 
-/*********************************************************************************************
 
-5.	Three-column fluid layout with two sidebars on both sides of content
+/* `5. Three-column fluid layout with two sidebars on both sides of content
+---------------------------------------------------------*/
 
-*********************************************************************************************/
 
 .layout-three-col-both div {
 	&#container {
