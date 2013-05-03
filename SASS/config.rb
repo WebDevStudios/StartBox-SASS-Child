@@ -1,3 +1,4 @@
+# Config file: http://compass-style.org/help/tutorials/configuration-reference/
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
