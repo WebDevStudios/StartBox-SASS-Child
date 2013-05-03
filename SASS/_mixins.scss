@@ -17,6 +17,23 @@
 	clear: both;
 }
 
+/*
+ * Image replacement - http://html5boilerplate.com/
+ */
+@mixin ir() {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+	&:before {
+		content: '';
+		display: block;
+		width: 0;
+		height: 150%;
+	}
+}
+
 @mixin button_main() {
 	display:inline-block;
 	background-color: $three;
