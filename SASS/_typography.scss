@@ -17,10 +17,10 @@ body {
 }
 a, a:visited {
 	text-decoration:none;
-	color:$nine;
+	color:$link_color;
 }
 a:hover, a:active {
-	color:$three;
+	color:$link_hover;
 }
 h1,h2,h3,h4,h5,h6 {
 	color:$one;
