@@ -17,6 +17,12 @@
 	clear: both;
 }
 
+@mixin clear_after() {
+	&:after {
+		@include clear();
+	}
+}
+
 /*
  * Image replacement - http://html5boilerplate.com/
  */
